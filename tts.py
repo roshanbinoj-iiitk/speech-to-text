@@ -13,7 +13,7 @@ st.write("Upload an audio file and get a Notepad-compatible `.txt` file with the
 
 
 MAX_SIZE_MB = 10
-SEGMENT_LENGTH_MS = 5 * 60 * 1000  # 5 minutes in milliseconds
+SEGMENT_LENGTH_MS = 10 * 60 * 1000  # 5 minutes in milliseconds
 
 def compress_audio(input_path, output_path, target_bitrate="32k"):
     audio = AudioSegment.from_file(input_path)
