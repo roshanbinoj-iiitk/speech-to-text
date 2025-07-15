@@ -64,7 +64,7 @@ if uploaded_file and api_key:
     st.audio(temp_audio_path, format="audio/mp3")
 
     if st.button("📝 Transcribe"):
-        st.info("Splitting audio into 5-minute segments...")
+        st.info("Splitting audio into 10-minute segments...")
         segment_paths = split_audio_to_segments(temp_audio_path)
         full_transcript = ""
         for i, segment_path in enumerate(segment_paths):
